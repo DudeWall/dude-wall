@@ -19,6 +19,11 @@ body {
   margin-bottom: 10px;
 }
 
+.tree > li:first-child a {
+  font-weight: bold;
+  color: #fff;
+}
+
 .tree, .tree ul {
   list-style: none;
   padding-left: 20px;
