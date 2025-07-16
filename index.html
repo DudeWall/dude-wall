@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  
 <head>
   <meta charset="UTF-8">
   <title>My Simple Tutorial Site</title>
@@ -9,13 +10,37 @@
     a { color: darkcyan; }
   </style>
 </head>
+  
 <body>
   <h1>Welcome to Dude Wall</h1>
-  <p>This is where I post my guides, tips, and instructions!</p>
+  <p>This is where you will find Dudes from various chapters!</p>
   <h2>Content</h2>
+  
   <ul>
     <li><a href="gallery1.html">How to add your Dude</a></li>
     <li><a href="gallery2.html">Submitting updates</a></li>
   </ul>
+
+  <div class="sidebar">
+  <h2>Gallery Menu</h2>
+  <ul class="tree">
+    <li>
+      <span class="folder" onclick="toggle(this)">📁 Characters</span>
+      <ul class="nested">
+        <li><a href="hero-a.html">Hero A</a></li>
+        <li><a href="villains.html">Villains</a></li>
+      </ul>
+    </li>
+    <li>
+      <span class="folder" onclick="toggle(this)">📁 Weapons</span>
+      <ul class="nested">
+        <li><a href="melee.html">Melee</a></li>
+        <li><a href="ranged.html">Ranged</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+  
 </body>
+  
 </html>
