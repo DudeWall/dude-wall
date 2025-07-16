@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hero A Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <!-- (repeat sidebar here or extract into a common include later) -->
+    <h2>Gallery Menu</h2>
+    <ul class="tree">
+      <li>
+        <span class="folder" onclick="toggle(this)">📁 Characters</span>
+        <ul class="nested" style="display:block">
+          <li><a href="hero-a.html">Hero A</a></li>
+          <li><a href="villains.html">Villains</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="folder" onclick="toggle(this)">📁 Weapons</span>
+        <ul class="nested">
+          <li><a href="melee.html">Melee</a></li>
+          <li><a href="ranged.html">Ranged</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>Hero A Gallery</h1>
+    <img src="images/hero-a1.jpg" alt="Hero A Image 1" width="300">
+    <img src="images/hero-a2.jpg" alt="Hero A Image 2" width="300">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
