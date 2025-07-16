@@ -19,7 +19,7 @@ function loadContent(link, pushState = true) {
       document.querySelector('.main-content').innerHTML = newContent;
 
       if (pushState) {
-      history.pushState(null, '', '#!' + target); // URL becomes index.html#!pages/hero-a.html
+      history.pushState(null, '', 'index.html'); // URL becomes index.html#!pages/hero-a.html
       }
 
       // 🔹 Remove previous highlights
@@ -56,6 +56,7 @@ setupDynamicLinks();
 window.addEventListener('popstate', () => {
   const path = window.location.pathname.split('/').pop() || 'index.html';
   const matchingLink = document.querySelector(`a[data-load="/${path}"], a[data-load="${path}"]`);
+  loadContent(document.querySelector('a[data-load="index.html"]'), false);
 
   if (matchingLink) {
     loadContent(matchingLink, false);
