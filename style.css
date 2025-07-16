@@ -49,18 +49,6 @@ body {
   border-right: 1px solid #333;
 }
 
-.sidebar-right {
-  position: fixed;
-  right: 0;
-  top: 37px;
-  width: 240px;
-  height: 100%;
-  background-color: #1e1e1e;
-  padding: 20px 10px;
-  overflow-y: auto;
-  border-left: 1px solid #333;
-}
-
 .main-content {
   margin-left: 120px;
   margin-right: 120px;
@@ -104,9 +92,8 @@ ul.misc-tree a:hover {
 }
 
 .nested {
+  margin-left: 1em;
   display: none;
-  margin-left: 15px;
-  transition: all 0.3s ease;
 }
 
 .folder-toggle.open > .nested {
@@ -114,8 +101,18 @@ ul.misc-tree a:hover {
 }
 
 .folder-header {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   font-weight: bold;
+  padding: 0.25em 0;
+}
+
+.folder-header > a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  line-height: 1;
 }
 
 .folder-header.active {
