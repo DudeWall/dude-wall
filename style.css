@@ -5,31 +5,55 @@ body {
 }
 
 .sidebar {
-  width: 200px;
-  background-color: #222;
+  width: 220px;
+  background-color: #1e1e1e;
   color: white;
   height: 100vh;
   padding: 20px;
   position: fixed;
+  overflow-y: auto;
 }
 
 .sidebar h2 {
   font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
+.tree, .tree ul {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.tree .nested {
+  display: none;
+}
+
+.tree .folder {
+  cursor: pointer;
+  display: block;
+  margin: 5px 0;
+  color: #aaf;
+}
+
+.tree .folder::before {
+  content: "\25B6 ";
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.tree .folder.active::before {
+  content: "\25BC ";
 }
 
 .sidebar ul li a {
-  color: #aaf;
+  color: #9cf;
   text-decoration: none;
   display: block;
-  padding: 5px 0;
+  padding: 3px 0;
 }
 
 .main-content {
-  margin-left: 220px;
+  margin-left: 240px;
   padding: 20px;
 }
