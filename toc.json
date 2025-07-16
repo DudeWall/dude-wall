@@ -1,10 +1,39 @@
 [
   {
-    "title": "Profiles",
+    "title": "First founding",
     "children": [
       { "title": "Hero A", "link": "hero-a.html" },
       { "title": "Hero B", "link": "hero-b.html" },
       { "title": "Villains", "link": "villains.html" }
+    ]
+  },
+  {
+    "title": "Unknown foundings",
+    "children": [
+      { "title": "Hero A", "link": "hero-a.html" },
+      { "title": "Hero B", "link": "hero-b.html" },
+      { "title": "Villains", "link": "villains.html" }
+    ]
+  },
+  {
+    "title": "Inquisition and Holy Terra",
+    "children": [
+      { "title": "Hero A", "link": "hero-a.html" },
+      { "title": "Hero B", "link": "hero-b.html" },
+      { "title": "Villains", "link": "villains.html" }
+    ]
+  },
+    {
+    "title": "/sm2g/'s Phantom Links",
+    "children": [
+      { "title": "Hero A", "link": "hero-a.html" }
+    ]
+  },
+  {
+    "title": "Homebrew section",
+    "children": [
+      { "title": "Individual Dudes", "link": "hero-a.html" },
+      { "title": "Homebrew Chapters", "link": "hero-b.html" }
     ]
   }
 ]

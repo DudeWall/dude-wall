@@ -66,9 +66,18 @@ body {
 
 .logo {
   width: 1400px;
-  max-width: 90%;
+  max-width: 1400px;
   margin: 0 auto 20px auto;
   display: block;
+}
+
+.sidebar ul li a {
+  color: #9cf;
+  text-decoration: none;
+  display: block;
+  padding: 4px 6px;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .sidebar ul li a.active {
@@ -77,4 +86,33 @@ body {
   padding: 4px 6px;
   border-radius: 4px;
   color: #fff;
+}
+
+.sidebar ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.sidebar ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 4px;
+  background-color: #00aaff;
+  border-radius: 2px;
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+/* When active, scale in the border */
+.sidebar ul li a.active::before {
+  transform: scaleY(1);
+}
+
+/* Optional: show border on hover too */
+.sidebar ul li a:hover::before {
+  transform: scaleY(1);
+  background-color: #66ccff;
 }
