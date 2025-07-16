@@ -62,3 +62,14 @@ body {
   margin-left: 240px;
   padding: 20px;
 }
+
+.landing-header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.logo {
+  width: 1000px;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
