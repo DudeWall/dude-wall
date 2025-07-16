@@ -26,7 +26,8 @@
     {
     "title": "/sm2g/'s Phantom Links",
     "children": [
-      { "title": "Hero A", "link": "hero-a.html" }
+      { "title": "Individual Dudes", "link": "hero-a.html" },
+      { "title": "Homebrew Chapters", "link": "hero-b.html" }
     ]
   },
   {
@@ -35,5 +36,9 @@
       { "title": "Individual Dudes", "link": "hero-a.html" },
       { "title": "Homebrew Chapters", "link": "hero-b.html" }
     ]
+  },
+  {
+    "title": "Chaos Khorner",
+    "link": "single.html"
   }
 ]
