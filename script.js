@@ -19,7 +19,7 @@ function loadContent(link, pushState = true) {
       document.querySelector('.main-content').innerHTML = newContent;
 
       if (pushState) {
-        history.pushState(null, '', target);
+      history.pushState(null, '', '#!' + target); // URL becomes index.html#!pages/hero-a.html
       }
 
       // 🔹 Remove previous highlights
