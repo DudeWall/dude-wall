@@ -8,10 +8,15 @@ function buildSidebar(sections) {
 
   tree.innerHTML = '';
 
+  const currentPage = window.location.pathname.split('/').pop();
+
   const home = document.createElement('li');
   const homeLink = document.createElement('a');
   homeLink.href = 'index.html';
   homeLink.textContent = '🏠 Home';
+  if (currentPage === '' || currentPage === 'index.html') {
+    homeLink.classList.add('active');
+  }
   home.appendChild(homeLink);
   tree.appendChild(home);
 
@@ -30,6 +35,14 @@ function buildSidebar(sections) {
       const link = document.createElement('a');
       link.href = item.link;
       link.textContent = item.title;
+
+      // 🔥 Add active class if this is the current page
+      if (item.link === currentPage) {
+        link.classList.add('active');
+        span.classList.add('active'); // expand the folder if needed
+        ul.style.display = 'block';
+      }
+
       childLi.appendChild(link);
       ul.appendChild(childLi);
     });
