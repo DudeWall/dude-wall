@@ -1,0 +1,49 @@
+[
+  {
+    "title": "Adeptus Astartes",
+    "children": [
+      { "title": "Hero A", "link": "hero-a.html" },
+      { "title": "Villains", "link": "villains.html" }
+    ]
+  },
+  {
+    "title": "Inquisition and Holy Terra",
+    "children": [
+      { "title": "Melee", "link": "melee.html" },
+      { "title": "Ranged", "link": "ranged.html" }
+    ]
+  },
+  {
+    "title": "Loyalists",
+    "children": [
+      { "title": "Melee", "link": "melee.html" },
+      { "title": "Ranged", "link": "ranged.html" }
+    ]
+  },
+  {
+    "title": "Unknown Foundings",
+    "children": [
+      { "title": "Melee", "link": "melee.html" },
+      { "title": "Ranged", "link": "ranged.html" }
+    ]
+  },
+  {
+    "title": "/sm2g/ Chapter",
+    "children": [
+      { "title": "Phantom Links", "link": "melee.html" }
+    ]
+  },
+  {
+    "title": "Homebrew section",
+    "children": [
+      { "title": "Individual Dudes", "link": "melee.html" },
+      { "title": "Chapters", "link": "ranged.html" }
+    ]
+  },
+  {
+    "title": "Chaos Khorner",
+    "children": [
+      { "title": "Chaos dudes", "link": "melee.html" }
+    ]
+  }
+]
