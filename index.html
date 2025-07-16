@@ -2,27 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Gallery Site</title>
+  <title>Gallery Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Left Sidebar -->
   <div class="sidebar-left">
-    <h2>Gallery Menu</h2>
-    <ul class="tree"></ul>
+    <ul class="nav-tree">
+      <li><a href="index.html">🏠 Home</a></li>
+
+      <li class="folder-toggle">
+        <span class="folder-header">📁 Characters</span>
+        <ul class="nested">
+          <li><a href="pages/hero-a.html">Hero A</a></li>
+          <li><a href="pages/villains.html">Villains</a></li>
+        </ul>
+      </li>
+
+      <hr class="toc-separator">
+
+      <li><a href="pages/lore.html">📁 Lore</a></li>
+    </ul>
   </div>
 
-  <div class="sidebar-right">
-    <h2>Important info</h2>
-  <ul class="misc-tree"></ul>
-  </div>
-
-</div>
+  <!-- Main Content -->
   <div class="main-content">
-    <div class="landing-header">
-      <img src="https://i.imgur.com/AhDqN9C.png" alt="Site Logo" class="logo">
-      <h1>Welcome to My Gallery</h1>
-      <br>This site is a collection of galleries, guides, and images related to my creative work, modding projects, and artwork. Use the sidebar to explore different sections!</br>
-    </div>
+    <h1>Welcome to the Gallery</h1>
+    <p>This is the landing page for your static gallery website. It includes a left and right sidebar with minimal JavaScript for interaction and accessibility.</p>
+  </div>
+
+  <!-- Right Sidebar -->
+  <div class="sidebar-right">
+    <ul class="misc-tree">
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="credits.html">Credits</a></li>
+      <li><a href="mods.html">Mods</a></li>
+    </ul>
   </div>
 
   <script src="script.js"></script>
