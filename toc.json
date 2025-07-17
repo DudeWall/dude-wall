@@ -5,6 +5,7 @@
   },
   {
     "title": "First Founding",
+    "icon": "icons/adeptus-astartes.svg",
     "children": [
     {
       "title": "Dark Angels",
@@ -22,11 +23,13 @@
     },
     {
       "title": "White scars",
-      "link": "pages/gallery/OG-Chapters/UM.html", 
+      "link": "pages/gallery/OG-Chapters/UM.html",
+      "icon": "icons/white-scars.svg", 
       "children": [
         {
           "title": "Mantis Warriors",
-          "link": "pages/gallery/lost/11.html"
+          "link": "pages/gallery/lost/11.html",
+          "icon": "https://i.ibb.co/9kwKgB01/Mantis-Warriros.png"
         }
       ]
     },
@@ -49,13 +52,37 @@
       "link": "pages/gallery/OG-Chapters/UM.html", 
       "children": [
         {
-          "title": "Chapter 11",
+          "title": "Crimson Fists",
           "link": "pages/gallery/lost/11.html"
         },
         {
-          "title": "Chapter 2",
+          "title": "Hammers of Dorn",
           "link": "pages/gallery/lost/2.html"
-        }
+        },
+        {
+          "title": "Celestial Lions",
+          "link": "pages/gallery/lost/2.html"
+        },
+        {
+          "title": "Sons of the Phoenix",
+          "link": "pages/gallery/lost/2.html"
+        },
+        {
+          "title": "Executioners",
+          "link": "pages/gallery/lost/2.html"
+        },
+        {
+          "title": "Hospitallers",
+          "link": "pages/gallery/lost/2.html"
+        },
+        {
+          "title": "Retributors",
+          "link": "pages/gallery/lost/2.html"
+        },
+        {
+          "title": "Sons of Dorn",
+          "link": "pages/gallery/lost/2.html"
+        }                                             
       ]
     },
     {
@@ -63,13 +90,29 @@
       "link": "pages/gallery/OG-Chapters/UM.html",       
       "children": [
         {
-          "title": "Chapter 11",
+          "title": "Lamenters",
           "link": "pages/gallery/lost/11.html"
         },
         {
-          "title": "Chapter 2",
+          "title": "Blood Drinkers",
           "link": "pages/gallery/lost/2.html"
-        }
+        },
+        {
+          "title": "Flesh Tearers",
+          "link": "pages/gallery/lost/2.html"
+        },
+        {
+          "title": "Angels Encarmine",
+          "link": "pages/gallery/lost/2.html"
+        },
+        {
+          "title": "Atlantian Spears",
+          "link": "pages/gallery/lost/2.html"
+        },
+        {
+          "title": "Flesh Eaters",
+          "link": "pages/gallery/lost/2.html"
+        }                                
       ]
     },
     {
@@ -77,13 +120,21 @@
       "link": "pages/gallery/OG-Chapters/UM.html",      
       "children": [
         {
-          "title": "Chapter 11",
+          "title": "Sons of Medusa",
           "link": "pages/gallery/lost/11.html"
         },
         {
-          "title": "Chapter 2",
+          "title": "Iron Fists",
           "link": "pages/gallery/lost/2.html"
-        }
+        },
+        {
+          "title": "Brazen Claws",
+          "link": "pages/gallery/lost/2.html"
+        },
+        {
+          "title": "Knights of Byzantium",
+          "link": "pages/gallery/lost/2.html"
+        }                
       ]
     },                
     {
@@ -169,7 +220,39 @@
         ]
       },
       {
-        "title": "Necrons",
+      "title": "Salamanders",
+      "link": "pages/gallery/OG-Chapters/UM.html",      
+      "children": [
+        {
+          "title": "Covenant of Fire",
+          "link": "pages/gallery/lost/11.html"
+        }               
+      ]
+    },
+    {
+      "title": "Raven Guard",
+      "link": "pages/gallery/OG-Chapters/UM.html",      
+      "children": [
+        {
+          "title": "Raptors",
+          "link": "pages/gallery/lost/11.html"
+        },
+        {
+          "title": "Iron Ravens",
+          "link": "pages/gallery/lost/2.html"
+        },
+        {
+          "title": "Raven's Watch",
+          "link": "pages/gallery/lost/2.html"
+        },
+        {
+          "title": "Death Spectres",
+          "link": "pages/gallery/lost/2.html"
+        }                
+      ]
+    },
+      {
+        "title": "Alpha Legion",
         "link": "pages/gallery/necrons.html"
       }
     ]
@@ -179,7 +262,7 @@
     "children": [
       {
         "title": "Deathwatch",
-        "link": "pages/tactics/ambush.html"
+        "link": "pages/gallery/Other/DW.html"
       },
       {
         "title": "Grey Knights",

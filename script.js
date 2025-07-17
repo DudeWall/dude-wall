@@ -27,22 +27,33 @@ function buildTree(items) {
 
       if (item.link) {
         const a = document.createElement('a');
-        a.textContent = '📁 ' + item.title;
+        // Add icon only if specified
+        if (item.icon && item.icon.trim()) {
+          addIcon(a, item.icon);
+        }
+        a.appendChild(document.createTextNode(item.title));
         a.href = '#';
         a.setAttribute('data-load', item.link);
         header.appendChild(a);
       } else {
-        header.textContent = '📁 ' + item.title;
+        const span = document.createElement('span');
+        if (item.icon && item.icon.trim()) {
+          addIcon(span, item.icon);
+        }
+        span.appendChild(document.createTextNode(item.title));
+        header.appendChild(span);
       }
 
-      // Remove click event since all are expanded by default
       li.appendChild(header);
       const nestedUl = buildTree(item.children);
       li.appendChild(nestedUl);
-      li.classList.add('open'); // Expand all folders by default
+      li.classList.add('open');
     } else {
       const a = document.createElement('a');
-      a.textContent = item.title;
+      if (item.icon && item.icon.trim()) {
+        addIcon(a, item.icon);
+      }
+      a.appendChild(document.createTextNode(item.title));
       a.href = '#';
       a.setAttribute('data-load', item.link);
       li.appendChild(a);
@@ -52,6 +63,35 @@ function buildTree(items) {
   });
 
   return ul;
+}
+
+// Function to add icon based on type
+function addIcon(element, icon) {
+  // Check if it's a Font Awesome class
+  if (icon.startsWith('fa-') || icon.includes('fa-')) {
+    const iconElement = document.createElement('i');
+    iconElement.className = `fas ${icon}`;
+    iconElement.style.marginRight = '0.5rem';
+    element.insertBefore(iconElement, element.firstChild);
+  }
+  // Check if it's an SVG string
+  else if (icon.trim().startsWith('<svg')) {
+    const iconElement = document.createElement('span');
+    iconElement.innerHTML = icon;
+    iconElement.style.marginRight = '0.5rem';
+    iconElement.querySelector('svg').style.width = '16px';
+    iconElement.querySelector('svg').style.height = '16px';
+    element.insertBefore(iconElement, element.firstChild);
+  }
+  // Assume it's an image path
+  else {
+    const iconElement = document.createElement('img');
+    iconElement.src = icon;
+    iconElement.alt = 'Icon';
+    iconElement.style.width = '16px';
+    iconElement.style.marginRight = '0.5rem';
+    element.insertBefore(iconElement, element.firstChild);
+  }
 }
 
 // Load page content into main area
