@@ -1,45 +1,85 @@
-// Handle collapsible folders in left sidebar
-document.querySelectorAll('.folder-toggle .folder-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const parent = header.parentElement;
-    parent.classList.toggle('open');
+// Load TOC and build sidebar
+fetch('toc.json')
+  .then(res => res.json())
+  .then(data => {
+    const tree = document.querySelector('.nav-tree');
+    if (tree) {
+      tree.innerHTML = '';
+      tree.appendChild(buildTree(data));
+      setupDynamicLinks();
+    }
+  })
+  .catch(error => console.error('Error loading toc.json:', error));
+
+// Recursive function to build nested list
+function buildTree(items) {
+  const ul = document.createElement('ul');
+  ul.className = 'nav-tree-list';
+
+  items.forEach(item => {
+    const li = document.createElement('li');
+
+    if (item.children) {
+      li.classList.add('folder-toggle');
+
+      const header = document.createElement('div');
+      header.className = 'folder-header';
+
+      if (item.link) {
+        const a = document.createElement('a');
+        a.textContent = '📁 ' + item.title;
+        a.href = '#';
+        a.setAttribute('data-load', item.link);
+        header.appendChild(a);
+      } else {
+        header.textContent = '📁 ' + item.title;
+      }
+
+      // Remove click event since all are expanded by default
+      li.appendChild(header);
+      const nestedUl = buildTree(item.children);
+      li.appendChild(nestedUl);
+      li.classList.add('open'); // Expand all folders by default
+    } else {
+      const a = document.createElement('a');
+      a.textContent = item.title;
+      a.href = '#';
+      a.setAttribute('data-load', item.link);
+      li.appendChild(a);
+    }
+
+    ul.appendChild(li);
   });
-});
 
-// Highlight and load content dynamically
-function loadContent(link, pushState = true) {
-  const target = link.getAttribute('data-load');
+  return ul;
+}
 
-  fetch(target)
-    .then(response => response.text())
+// Load page content into main area
+function loadContent(link, push = true) {
+  if (!link) return;
+  const path = link.getAttribute('data-load');
+  if (!path) return;
+
+  fetch(path)
+    .then(res => res.text())
     .then(html => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
-      const newContent = doc.body.innerHTML;
-      document.querySelector('.main-content').innerHTML = newContent;
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      const content = doc.body.innerHTML;
+      document.querySelector('.main-content').innerHTML = content;
 
-      if (pushState) {
-      history.pushState(null, '', 'index.html'); // URL becomes index.html#!pages/hero-a.html
+      if (push) {
+        history.pushState({ path }, '', `#${path}`);
       }
 
-      // 🔹 Remove previous highlights
       document.querySelectorAll('a').forEach(a => a.classList.remove('active'));
-      document.querySelectorAll('.folder-header').forEach(h => h.classList.remove('active'));
-
-      // 🔹 Highlight the clicked link
       link.classList.add('active');
-
-      // 🔹 If it's a child inside a folder, also highlight the folder header
-      const folder = link.closest('.folder-toggle');
-      if (folder) {
-        folder.classList.add('open');
-        const header = folder.querySelector('.folder-header');
-        if (header) header.classList.add('active');
-      }
+    })
+    .catch(() => {
+      document.querySelector('.main-content').innerHTML = '<p>Error loading content.</p>';
     });
 }
 
-// Attach click listeners to all [data-load] links
+// Setup click listeners for sidebar links
 function setupDynamicLinks() {
   document.querySelectorAll('a[data-load]').forEach(link => {
     link.addEventListener('click', function (e) {
@@ -49,23 +89,19 @@ function setupDynamicLinks() {
   });
 }
 
-// Setup on page load
-setupDynamicLinks();
-
-// Handle browser back/forward navigation
-window.addEventListener('popstate', () => {
-  const path = window.location.pathname.split('/').pop() || 'index.html';
-  const matchingLink = document.querySelector(`a[data-load="/${path}"], a[data-load="${path}"]`);
-  loadContent(document.querySelector('a[data-load="index.html"]'), false);
-
-  if (matchingLink) {
-    loadContent(matchingLink, false);
-  } else {
-    fetch(path)
-      .then(res => res.text())
-      .then(html => {
-        const doc = new DOMParser().parseFromString(html, 'text/html');
-        document.querySelector('.main-content').innerHTML = doc.body.innerHTML;
-      });
+// Load default page on startup
+window.addEventListener('DOMContentLoaded', () => {
+  const hash = location.hash.slice(1);
+  const defaultPath = hash || 'pages/introduction.html';
+  const targetLink = document.querySelector(`a[data-load="${defaultPath}"]`);
+  if (targetLink) {
+    loadContent(targetLink, false);
   }
+});
+
+// Handle browser navigation
+window.addEventListener('popstate', () => {
+  const hash = location.hash.slice(1);
+  const link = document.querySelector(`a[data-load="${hash}"]`);
+  if (link) loadContent(link, false);
 });

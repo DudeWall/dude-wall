@@ -1,79 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dude Wall of /sm2g/</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Sidebar Site</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header class="site-header">
     <div class="header-content">
-      <img src="https://i.imgur.com/AhDqN9C.png" alt="Site Logo" class="site-logo">
-      <h1 class="site-title">Dude Wall of /sm2g/</h1>
+      <img src="https://i.imgur.com/AhDqN9C.png" alt="Site Logo" class="site-logo" />
+      <h1 class="site-title">Dude Wall</h1>
     </div>
   </header>
 
-  <div class="sidebar-left">
-    <ul class="nav-tree">
-      <li><a href="index.html" data-load="index.html">🏠 Home</a></li>
+  <div class="layout-wrapper">
+    <aside class="sidebar-left">
+      <div class="nav-tree"></div>
+      <hr class="toc-separator" />
+      <div class="misc-tree"></div>
+    </aside>
 
-      <li class="folder-toggle">
-        <span class="folder-header">📁 First Founding</span>
-        <ul class="nested">
-          <li><a href="index.html" data-load="pages/hero-a.html">Dark Angels</a></li>
-          <li><a href="index.html" data-load="pages/hero-b.html">Space Wolves</a></li>
-          <li><a href="index.html" data-load="pages/villains.html">Villains</a></li>
-        </ul>
-      </li>
-
-      <hr class="toc-separator">
-
-<ul class="nav-tree">
-  <!-- Header (has its own page and children) -->
-  <li class="folder-toggle">
-    <span class="folder-header">
-      <a href="index.html" data-load="pages/imperium.html">📁 The Imperium</a>
-    </span>
-
-    <!-- Children -->
-    <ul class="nested">
-      <li class="folder-toggle">
-        <span class="folder-header">
-          <a href="index.html" data-load="pages/mechanicus.html">Adeptus Mechanicus</a>
-        </span>
-
-        <!-- Grandchildren -->
-        <ul class="nested">
-          <li>
-            <a href="index.html" data-load="pages/tech-priests.html">Notable Tech-Priests</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-      <hr class="toc-separator">
-            <li class="folder-toggle">
-        <span class="folder-header">📁 Inquisition and Holy Terra</span>
-        <ul class="nested">
-          <li><a href="index.html" data-load="pages/hero-a.html">Hero A</a></li>
-          <li><a href="index.html" data-load="pages/hero-b.html">Hero B</a></li>
-          <li><a href="index.html" data-load="pages/villains.html">Villains</a></li>
-        </ul>
-      </li>
-
-      <hr class="toc-separator">
-
-      <li><a href="index.html" data-load="pages/lore.html">📁 Lore</a></li>
-    </ul>
-  </div>
-
-  <div class="main-content">
-    <img src="https://i.imgur.com/AhDqN9C.png" alt="Site Logo" class="logo">
-    <h1>Welcome to the Gallery</h1>
-    <p>This is the landing page for your static gallery website. It includes a left and right sidebar with minimal JavaScript for interaction and accessibility.</p>
+    <main class="main-content">
+      <p>Loading content...</p>
+    </main>
   </div>
 
   <script src="script.js"></script>
