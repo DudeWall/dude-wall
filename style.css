@@ -29,6 +29,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Darker shadow */
   flex-shrink: 0;
   height: 80px;
+  justify-content: center; /* Center the header content horizontally */
 }
 
 .header-content {
@@ -39,7 +40,7 @@ body {
 
 .site-logo {
   height: 40px;
-  filter: brightness(0) invert(1); /* Invert logo for dark theme if it's light */
+  /*filter: brightness(0) invert(0); /* Invert logo for dark theme if it's light */
 }
 
 .site-title {
