@@ -28,7 +28,6 @@ function buildTree(items) {
       if (item.bold === true || item.bold === undefined) {
         header.classList.add('bold-header');
       } else if (item.bold === false) {
-        // Do nothing or remove bold-header if already present
         header.classList.remove('bold-header');
       }
 
@@ -140,6 +139,14 @@ window.addEventListener('DOMContentLoaded', () => {
   const targetLink = document.querySelector(`a[data-load="${defaultPath}"]`);
   if (targetLink) {
     loadContent(targetLink, false);
+  }
+  // Ensure the home button is included in dynamic links
+  const homeButton = document.querySelector('.home-button');
+  if (homeButton) {
+    homeButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      loadContent(this);
+    });
   }
 });
 

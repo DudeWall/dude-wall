@@ -66,6 +66,21 @@ body > .layout-wrapper {
   overflow-y: auto;
 }
 
+.sidebar-left .home-button {
+  text-decoration: none;
+  color: #e0e0e0;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-bottom: 0,5rem;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-left .home-button:hover {
+  background-color: #2e2e2e;
+}
+
 @media (max-width: 768px) {
   .sidebar-left {
     width: 100%;
@@ -82,18 +97,18 @@ body > .layout-wrapper {
 /* Main Content */
 .main-content {
   flex: 1;
-  padding: 1rem;
+  padding: 2rem;
   overflow-y: auto;
   min-height: 0;
   background-color: #1e1e1e;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  width: 100%; /* Ensure full width of container */
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .main-content img {
-  max-width: 100%; /* Scale images to fit container width */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove any inline spacing issues */
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Sidebar Tree */
@@ -142,7 +157,7 @@ body > .layout-wrapper {
 }
 
 .nav-tree-list a.active {
-  background-color: #476d83;
+  background-color: #375b79;
   font-weight: bold;
   color: #ffffff;
 }
