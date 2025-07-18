@@ -10,8 +10,8 @@
     "children": [
     {
       "title": "Dark Angels",
-      "link": "pages/gallery/OG-Chapters/DA.html", 
-      "bold": false,
+      "link": "pages/gallery/OG-Chapters/DA.html",
+      "icon": "https://i.ibb.co/pBHm7w5W/Darkangelsymbol.png",       
       "children": [
         {
           "title": "Guardians of the Covenant",
@@ -25,8 +25,8 @@
     },
     {
       "title": "White scars",
-      "link": "pages/gallery/OG-Chapters/UM.html",
-      "icon": "icons/white-scars.svg", 
+      "link": "pages/gallery/OG-Chapters/WS.html",
+      "icon": "https://i.ibb.co/WN1pF19L/White-Scarssymbol.png", 
       "children": [
         {
           "title": "Mantis Warriors",
@@ -37,21 +37,14 @@
     },
         {
       "title": "Space Wolves",
-      "link": "pages/gallery/OG-Chapters/SW.html", 
-      "children": [
-        {
-          "title": "Chapter 11",
-          "link": "pages/gallery/lost/11.html"
-        },
-        {
-          "title": "Chapter 2",
-          "link": "pages/gallery/lost/2.html"
-        }
-      ]
+      "link": "pages/gallery/OG-Chapters/SW.html",
+      "icon": "https://i.ibb.co/r1M4mRd/Spacewolvesymbol.png",
+      "bold": true            
     },
     {
       "title": "Imperial Fists",
-      "link": "pages/gallery/OG-Chapters/IF.html", 
+      "link": "pages/gallery/OG-Chapters/IF.html",
+      "icon": "https://i.ibb.co/2YsLmbGP/IFsymbol.png",
       "children": [
         {
           "title": "Crimson Fists",
@@ -89,7 +82,8 @@
     },
     {
       "title": "Blood Angels",
-      "link": "pages/gallery/OG-Chapters/BA.html",       
+      "link": "pages/gallery/OG-Chapters/BA.html",
+      "icon": "https://i.ibb.co/h1g3JhqL/Bloodangelsymbol.png",             
       "children": [
         {
           "title": "Lamenters",
@@ -120,6 +114,7 @@
     {
       "title": "Iron Hands",
       "link": "pages/gallery/OG-Chapters/IH.html",
+      "icon": "https://i.ibb.co/V0kPRvRf/Iron-Handssymbol.png",
       "bold": true,            
       "children": [
         {
@@ -143,6 +138,7 @@
     {
           "title": "Ultramarines",
           "link": "pages/gallery/OG-Chapters/UM.html",
+          "icon": "https://i.ibb.co/5g2M4n8k/Ultramarinessymbol.png",
           "children": [
           {
             "title": "Silver Skulls",
@@ -226,6 +222,7 @@
       {
       "title": "Salamanders",
       "link": "pages/gallery/OG-Chapters/SM.html",
+      "icon": "https://i.ibb.co/sp1w664F/Salamanderssymbol.png",      
       "bold": true,            
       "children": [
         {
@@ -237,6 +234,7 @@
     {
       "title": "Raven Guard",
       "link": "pages/gallery/OG-Chapters/RG.html",
+      "icon": "https://i.ibb.co/j9p8HJz6/Raven-Guardsymbol2.png",      
       "bold": true,      
       "children": [
         {
@@ -274,7 +272,7 @@
       },
       {
         "title": "Grey Knights",
-        "link": "pages/tactics/heavy-weapons.html"
+        "link": "pages/gallery/Other/GK.html"
       },
       {
         "title": "Adeptus Custodes",
@@ -286,11 +284,11 @@
     "title": "Loyalists",
     "children": [
       {
-        "title": "Ultramarines",
+        "title": "World Eaters",
         "link": "pages/tactics/ambush.html"
       },
       {
-        "title": "Heavy Weapons",
+        "title": "The Risen",
         "link": "pages/tactics/heavy-weapons.html"
       }
     ]
@@ -366,6 +364,11 @@
       }   
     ]
   },
+    {
+    "title": "/sm2g/'s Phantom Links",
+    "link": "pages/villains.html",
+    "bold": true
+  }, 
   {
     "title": "Chaos Khorner",
     "link": "pages/villains.html",
