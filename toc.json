@@ -49,7 +49,7 @@
     },
     {
       "title": "Imperial Fists",
-      "link": "pages/gallery/OG-Chapters/UM.html", 
+      "link": "pages/gallery/OG-Chapters/IF.html", 
       "children": [
         {
           "title": "Crimson Fists",
@@ -87,7 +87,7 @@
     },
     {
       "title": "Blood Angels",
-      "link": "pages/gallery/OG-Chapters/UM.html",       
+      "link": "pages/gallery/OG-Chapters/BA.html",       
       "children": [
         {
           "title": "Lamenters",
@@ -117,7 +117,7 @@
     },
     {
       "title": "Iron Hands",
-      "link": "pages/gallery/OG-Chapters/UM.html",      
+      "link": "pages/gallery/OG-Chapters/IH.html",      
       "children": [
         {
           "title": "Sons of Medusa",
@@ -221,7 +221,7 @@
       },
       {
       "title": "Salamanders",
-      "link": "pages/gallery/OG-Chapters/UM.html",      
+      "link": "pages/gallery/OG-Chapters/SM.html",      
       "children": [
         {
           "title": "Covenant of Fire",
@@ -231,7 +231,7 @@
     },
     {
       "title": "Raven Guard",
-      "link": "pages/gallery/OG-Chapters/UM.html",      
+      "link": "pages/gallery/OG-Chapters/RG.html",      
       "children": [
         {
           "title": "Raptors",
@@ -253,7 +253,8 @@
     },
       {
         "title": "Alpha Legion",
-        "link": "pages/gallery/necrons.html"
+        "link": "pages/gallery/OG-CHapters/AL.html",
+        "icon": "https://i.ibb.co/ksNq5kJq/Alpha-Legion-badge.png"
       }
     ]
   },
