@@ -40,7 +40,6 @@ body {
 
 .site-logo {
   height: 40px;
-  filter: brightness(0) invert(0);
 }
 
 .site-title {
