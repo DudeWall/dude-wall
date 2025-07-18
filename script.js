@@ -135,7 +135,7 @@ function setupDynamicLinks() {
 // Load default page on startup
 window.addEventListener('DOMContentLoaded', () => {
   const hash = location.hash.slice(1);
-  const defaultPath = hash || 'pages/introduction.html';
+  const defaultPath = hash || 'introduction.html';
   const targetLink = document.querySelector(`a[data-load="${defaultPath}"]`);
   if (targetLink) {
     loadContent(targetLink, false);
