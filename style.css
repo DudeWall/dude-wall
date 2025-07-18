@@ -29,22 +29,29 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   flex-shrink: 0;
   height: 80px;
-  justify-content: center;
+  position: relative; /* For positioning context */
+}
+
+.site-logo {
+  height: 60px; /* Increased from 40px to 60px - adjust this value as needed */
+  position: absolute;
+  left: 1rem; /* Align with sidebar padding */
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
 }
 
 .header-content {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
-}
-
-.site-logo {
-  height: 40px;
+  width: 100%; /* Ensure it spans the full width */
+  height: 100%; /* Match header height */
 }
 
 .site-title {
   font-size: 1.5rem;
   color: #ffffff;
+  margin: 0; /* Remove default margin */
 }
 
 /* Layout Wrapper */
@@ -70,10 +77,10 @@ body > .layout-wrapper {
   text-decoration: none;
   color: #e0e0e0;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
   border-radius: 4px;
   font-weight: bold;
-  margin-bottom: 0,5rem;
+  margin-bottom: 0,3rem;
   transition: background-color 0.2s ease;
 }
 
@@ -87,6 +94,20 @@ body > .layout-wrapper {
     border-right: none;
     border-bottom: 1px solid #2e2e2e;
     height: auto;
+  }
+
+  .site-logo {
+    position: static; /* Reset to normal flow on mobile */
+    left: auto;
+    top: auto;
+    transform: none;
+    margin-bottom: 0.5rem; /* Space below logo */
+    height: 50px; /* Slightly smaller on mobile for balance - adjust as needed */
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
   }
 
   body > .layout-wrapper {
@@ -157,7 +178,7 @@ body > .layout-wrapper {
 }
 
 .nav-tree-list a.active {
-  background-color: #375b79;
+  background-color: #40667c;
   font-weight: bold;
   color: #ffffff;
 }
