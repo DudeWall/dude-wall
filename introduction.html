@@ -2,41 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction - Dude Wall</title>
-  <link rel="stylesheet" href="style.css" /> <!-- Link to the main stylesheet -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Dude Wall</title>
   <style>
-    .intro-container {
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6fa;
+      color: #333;
+    }
+
+    .landing-intro {
+      padding: 3rem 2rem;
+      background-color: #f9f9fc;
+      border-bottom: 2px solid #ccc;
       max-width: 800px;
       margin: 0 auto;
-      padding: 2rem;
-      color: #e0e0e0;
       text-align: center;
     }
 
-    .intro-logo {
-      max-width: 200px;
-      height: auto;
-      margin-bottom: 2rem;
-      image-orientation: center;
+    .landing-intro img.logo {
+      max-width: 160px;
+      margin-bottom: 1.5rem;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
     }
 
-    .intro-paragraph {
-      font-size: 1.1rem;
-      line-height: 1.6;
+    .landing-intro h1 {
+      font-size: 2.5rem;
       margin-bottom: 1.5rem;
+      color: #1a237e;
+    }
+
+    .landing-intro p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin: 1.2rem 0;
+      text-align: center;
+    }
+
+    .landing-intro .welcome-salute {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #2e3b4e;
     }
   </style>
 </head>
 <body>
-  <div class="intro-container">
-    <img src="https://i.imgur.com/AhDqN9C.png" alt="Dude Wall Logo" class="intro-logo" />
-    <p class="intro-paragraph">
-      Welcome to the Dude Wall! This site is a curated collection of content organized in a sleek, navigable sidebar. Explore various sections, from First Founding Chapters to the very edges of Chaos Khorner, and dive into the details with ease. Whether you're here for inspiration or information, we’ve got you covered.
+
+  <section class="landing-intro">
+    <img src="https://i.imgur.com/AhDqN9C.png" alt="The Dude Wall Logo" class="logo" />
+
+    <h1>Welcome, Brothers.</h1>
+    <p>
+      You stand at the gates of the <strong>Cool Guy Gallery</strong> — the next evolution of our ever-expanding archive.
+      What once began as a humble Rentry has grown far beyond its roots, fueled by the sheer number of legendary Guys
+      and the relentless spirit of the community.
     </p>
-    <p class="intro-paragraph">
-      Use the sidebar to navigate through the different categories. Click on any item to load its content, and feel free to return to this page anytime using the "Home" button. Enjoy your journey through the Wall Brothers!
+    <p>
+      This new stronghold was forged not just for better aesthetics, but for <em>clarity, order, and an unrivaled browsing experience</em>.
+      Faster. Smoother. Sharper. Every file, every folder, every face — just one click away.
     </p>
-  </div>
+    <p>
+      So click through, scroll deep, and witness the glory of what we’ve built together. The Old Gallery has passed into history — long live the new.
+    </p>
+    <p class="welcome-salute">
+      For the Gallery. For the Guys.
+    </p>
+  </section>
+
 </body>
 </html>
