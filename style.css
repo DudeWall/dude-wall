@@ -14,22 +14,22 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  color: #e0e0e0; /* Light text for dark theme */
-  background-color: #1e1e1e; /* Dark background for body */
+  color: #e0e0e0;
+  background-color: #1e1e1e;
   min-height: 100vh;
 }
 
 /* Header */
 .site-header {
-  background-color: #101010; /* Dark top bar */
-  color: #ffffff; /* White text for contrast */
+  background-color: #101010;
+  color: #ffffff;
   padding: 1rem;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Darker shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   flex-shrink: 0;
   height: 80px;
-  justify-content: center; /* Center the header content horizontally */
+  justify-content: center;
 }
 
 .header-content {
@@ -40,12 +40,12 @@ body {
 
 .site-logo {
   height: 40px;
-  /*filter: brightness(0) invert(0); /* Invert logo for dark theme if it's light */
+  filter: brightness(0) invert(1);
 }
 
 .site-title {
   font-size: 1.5rem;
-  color: #ffffff; /* White title */
+  color: #ffffff;
 }
 
 /* Layout Wrapper */
@@ -58,9 +58,9 @@ body > .layout-wrapper {
 /* Sidebar */
 .sidebar-left {
   width: 290px;
-  background-color: #101010; /* Dark sidebar */
+  background-color: #101010;
   padding: 1rem;
-  border-right: 1px solid #2e2e2e; /* Darker border */
+  border-right: 1px solid #2e2e2e;
   display: flex;
   flex-direction: column;
   min-height: 0;
@@ -85,9 +85,16 @@ body > .layout-wrapper {
   flex: 1;
   padding: 1rem;
   overflow-y: auto;
-  height: auto;
-  width: auto;
-  background-color: #1e1e1e; /* Dark main content */
+  min-height: 0;
+  background-color: #1e1e1e;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Ensure full width of container */
+}
+
+.main-content img {
+  max-width: 100%; /* Scale images to fit container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any inline spacing issues */
 }
 
 /* Sidebar Tree */
@@ -120,22 +127,25 @@ body > .layout-wrapper {
 
 .nav-tree-list a {
   text-decoration: none;
-  color: #e0e0e0; /* Light text for readability */
+  color: #e0e0e0;
   display: block;
   padding: 0.25rem 0 0.25rem 1.5rem;
   border-radius: 4px;
   transition: background-color 0.2s ease, padding-left 0.2s ease;
+  line-height: 1.2;
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 .nav-tree-list a:hover {
   padding-left: 1.8rem;
-  background-color: #2e2e2e; /* Darker hover for contrast */
+  background-color: #2e2e2e;
 }
 
 .nav-tree-list a.active {
-  background-color: #3e3e3e; /* Slightly lighter active state */
+  background-color: #476d83;
   font-weight: bold;
-  color: #ffffff; /* White for active link */
+  color: #ffffff;
 }
 
 .folder-header {
@@ -143,11 +153,22 @@ body > .layout-wrapper {
   padding: 0.25rem 0 0.25rem 1.5rem;
   border-radius: 4px;
   transition: background-color 0.2s ease;
-  color: #e0e0e0; /* Light text */
+  color: #e0e0e0;
+  line-height: 1.2;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .folder-header:hover {
-  background-color: #2e2e2e; /* Darker hover */
+  background-color: #2e2e2e;
+}
+
+.folder-header .bold-header {
+  font-weight: bold !important;
+}
+
+.folder-header a {
+  font-weight: inherit;
 }
 
 .folder-toggle > .folder-header {
@@ -156,14 +177,21 @@ body > .layout-wrapper {
   padding-left: 1rem;
   display: block;
   user-select: none;
-  color: #e0e0e0; /* Light text */
+  color: #e0e0e0;
+  line-height: 1.2;
+  font-size: 1rem;
 }
 
 .folder-toggle ul {
   margin-left: 1rem;
   padding-left: 0.75rem;
-  border-left: 2px solid #2e2e2e; /* Darker border */
+  border-left: 2px solid #2e2e2e;
   display: block;
+}
+
+/* Bold Header for Manual Control */
+.bold-header {
+  font-weight: bold !important;
 }
 
 /* Miscellaneous Separator */
@@ -171,17 +199,17 @@ body > .layout-wrapper {
   margin: 1.5rem 0;
   border: none;
   height: 1px;
-  background-color: #2e2e2e; /* Darker separator */
+  background-color: #2e2e2e;
 }
 
 /* Icon Styling */
 .nav-tree-list i,
 .nav-tree-list img,
 .nav-tree-list span svg {
-  vertical-align: middle; /* Align with text baseline */
-  height: 0.85em; /* Match font height */
-  width: auto; /* Maintain aspect ratio */
-  margin-right: 0.5rem; /* Consistent spacing */
+  vertical-align: middle;
+  height: 1em;
+  width: auto;
+  margin-right: 0.5rem;
 }
 
 /* Optional Scrollbar Styling */
@@ -192,18 +220,11 @@ body > .layout-wrapper {
 
 .sidebar-left::-webkit-scrollbar-track,
 .main-content::-webkit-scrollbar-track {
-  background: #1e1e1e; /* Match main content background */
+  background: #1e1e1e;
 }
 
 .sidebar-left::-webkit-scrollbar-thumb,
 .main-content::-webkit-scrollbar-thumb {
-  background-color: #4e4e4e; /* Darker thumb for contrast */
+  background-color: #4e4e4e;
   border-radius: 4px;
-}
-
-.img {
-  max-width: 100%;
-  display:block;
-  margin: auto;
-  height: auto;
 }

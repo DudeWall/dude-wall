@@ -1,7 +1,8 @@
 [
   {
     "title": "Introduction",
-    "link": "introduction.html"
+    "link": "introduction.html",
+    "bold": true
   },
   {
     "title": "First Founding",
@@ -10,6 +11,7 @@
     {
       "title": "Dark Angels",
       "link": "pages/gallery/OG-Chapters/DA.html", 
+      "bold": false,
       "children": [
         {
           "title": "Guardians of the Covenant",
@@ -117,7 +119,8 @@
     },
     {
       "title": "Iron Hands",
-      "link": "pages/gallery/OG-Chapters/IH.html",      
+      "link": "pages/gallery/OG-Chapters/IH.html",
+      "bold": true,            
       "children": [
         {
           "title": "Sons of Medusa",
@@ -138,12 +141,13 @@
       ]
     },                
     {
-        "title": "Ultramarines",
-        "link": "pages/gallery/OG-Chapters/UM.html",
-        "children": [
+          "title": "Ultramarines",
+          "link": "pages/gallery/OG-Chapters/UM.html",
+          "children": [
           {
             "title": "Silver Skulls",
-            "link": "pages/gallery/OG-Chapters/UM.html"
+            "link": "pages/gallery/OG-Chapters/UM.html",
+            "bold": true
           },
           {
             "title": "Silver Templars",
@@ -221,7 +225,8 @@
       },
       {
       "title": "Salamanders",
-      "link": "pages/gallery/OG-Chapters/SM.html",      
+      "link": "pages/gallery/OG-Chapters/SM.html",
+      "bold": true,            
       "children": [
         {
           "title": "Covenant of Fire",
@@ -231,7 +236,8 @@
     },
     {
       "title": "Raven Guard",
-      "link": "pages/gallery/OG-Chapters/RG.html",      
+      "link": "pages/gallery/OG-Chapters/RG.html",
+      "bold": true,      
       "children": [
         {
           "title": "Raptors",
@@ -254,6 +260,7 @@
       {
         "title": "Alpha Legion",
         "link": "pages/gallery/OG-CHapters/AL.html",
+        "bold": true,
         "icon": "https://i.ibb.co/ksNq5kJq/Alpha-Legion-badge.png"
       }
     ]
@@ -361,7 +368,8 @@
   },
   {
     "title": "Chaos Khorner",
-    "link": "pages/villains.html"
+    "link": "pages/villains.html",
+    "bold": true
   }, 
   {
     "title": "Contact",

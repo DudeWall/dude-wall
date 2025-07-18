@@ -24,10 +24,16 @@ function buildTree(items) {
 
       const header = document.createElement('div');
       header.className = 'folder-header';
+      // Apply bold-header if bold is true or undefined (default to bold for folders)
+      if (item.bold === true || item.bold === undefined) {
+        header.classList.add('bold-header');
+      } else if (item.bold === false) {
+        // Do nothing or remove bold-header if already present
+        header.classList.remove('bold-header');
+      }
 
       if (item.link) {
         const a = document.createElement('a');
-        // Add icon only if specified
         if (item.icon && item.icon.trim()) {
           addIcon(a, item.icon);
         }
@@ -53,6 +59,10 @@ function buildTree(items) {
       if (item.icon && item.icon.trim()) {
         addIcon(a, item.icon);
       }
+      // Apply bold-header only if bold is true, default to normal
+      if (item.bold === true) {
+        a.classList.add('bold-header');
+      }
       a.appendChild(document.createTextNode(item.title));
       a.href = '#';
       a.setAttribute('data-load', item.link);
@@ -67,28 +77,22 @@ function buildTree(items) {
 
 // Function to add icon based on type
 function addIcon(element, icon) {
-  // Check if it's a Font Awesome class
   if (icon.startsWith('fa-') || icon.includes('fa-')) {
     const iconElement = document.createElement('i');
     iconElement.className = `fas ${icon}`;
     iconElement.style.marginRight = '0.5rem';
     element.insertBefore(iconElement, element.firstChild);
   }
-  // Check if it's an SVG string
   else if (icon.trim().startsWith('<svg')) {
     const iconElement = document.createElement('span');
     iconElement.innerHTML = icon;
     iconElement.style.marginRight = '0.5rem';
-    iconElement.querySelector('svg').style.width = '16px';
-    iconElement.querySelector('svg').style.height = '16px';
     element.insertBefore(iconElement, element.firstChild);
   }
-  // Assume it's an image path
   else {
     const iconElement = document.createElement('img');
     iconElement.src = icon;
     iconElement.alt = 'Icon';
-    iconElement.style.width = '16px';
     iconElement.style.marginRight = '0.5rem';
     element.insertBefore(iconElement, element.firstChild);
   }
