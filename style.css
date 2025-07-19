@@ -63,9 +63,9 @@ body > .layout-wrapper {
 
 /* Sidebar */
 .sidebar-left {
-  width: 290px;
+  width: 300px;
   background-color: #101010;
-  padding: 1rem;
+  padding: 0,5rem;
   border-right: 1px solid #2e2e2e;
   display: flex;
   flex-direction: column;
@@ -118,7 +118,7 @@ body > .layout-wrapper {
 /* Main Content */
 .main-content {
   flex: 1;
-  padding: 2rem;
+  padding: 1rem;
   overflow-y: auto;
   min-height: 0;
   background-color: #1e1e1e;

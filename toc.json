@@ -15,11 +15,13 @@
       "children": [
         {
           "title": "Guardians of the Covenant",
-          "link": "pages/gallery/lost/11.html"
+          "link": "pages/gallery/Successors/DA/GOTC.html",
+          "icon": "https://i.ibb.co/zV66wN67/Guardians-of-the-Covenant.png"          
         },
         {
           "title": "Angels of Absolution",
-          "link": "pages/gallery/lost/2.html"
+          "link": "pages/gallery/Successors/DA/AOA.html",
+          "icon": "https://i.ibb.co/BKdL5Jmr/Angels-of-Absolution.png"          
         }
       ]
     },
@@ -31,7 +33,7 @@
         {
           "title": "Mantis Warriors",
           "link": "pages/gallery/lost/11.html",
-          "icon": "https://i.ibb.co/9kwKgB01/Mantis-Warriros.png"
+          "icon": "https://i.ibb.co/B5m4XPBF/Mantis-Warriors.png"
         }
       ]
     },
@@ -48,35 +50,43 @@
       "children": [
         {
           "title": "Crimson Fists",
-          "link": "pages/gallery/lost/11.html"
+          "link": "pages/gallery/lost/11.html",
+          "icon": "https://i.ibb.co/NnSjx7R4/Crimson-Fists.png"          
         },
         {
           "title": "Hammers of Dorn",
-          "link": "pages/gallery/lost/2.html"
+          "link": "pages/gallery/lost/11.html",
+          "icon": "https://i.ibb.co/4wb6x35p/Hammers-of-Dorn.png"          
         },
         {
           "title": "Celestial Lions",
-          "link": "pages/gallery/lost/2.html"
+          "link": "pages/gallery/lost/11.html",
+          "icon": "https://i.ibb.co/YFD1g6jQ/Celestial-Lions.png"          
         },
         {
           "title": "Sons of the Phoenix",
-          "link": "pages/gallery/lost/2.html"
+          "link": "pages/gallery/lost/11.html",
+          "icon": "https://i.ibb.co/93Z8JY39/Sons-of-the-Phoenix.png"          
         },
         {
           "title": "Executioners",
-          "link": "pages/gallery/lost/2.html"
+          "link": "pages/gallery/lost/11.html",
+          "icon": "https://i.ibb.co/HpYGgNQz/Executioners.png"          
         },
         {
           "title": "Hospitallers",
-          "link": "pages/gallery/lost/2.html"
+          "link": "pages/gallery/lost/11.html",
+          "icon": "https://i.ibb.co/Gfygk3Lg/Hospitallers.png"          
         },
         {
           "title": "Retributors",
-          "link": "pages/gallery/lost/2.html"
+          "link": "pages/gallery/lost/11.html",
+          "icon": "https://i.ibb.co/Rpy4fxC9/Retributors.png"          
         },
         {
           "title": "Sons of Dorn",
-          "link": "pages/gallery/lost/2.html"
+          "link": "pages/gallery/lost/11.html",
+          "icon": "https://i.ibb.co/1JR9fKN6/Sons-of-Dorn.png"          
         }                                             
       ]
     },
@@ -87,28 +97,34 @@
       "children": [
         {
           "title": "Lamenters",
-          "link": "pages/gallery/lost/11.html"
+          "link": "LINK",
+          "icon": "https://i.ibb.co/0pgQw9nd/Lamenters.png"          
         },
         {
           "title": "Blood Drinkers",
-          "link": "pages/gallery/lost/2.html"
+          "link": "LINK",
+          "icon": "https://i.ibb.co/GBrgyFm/Blood-Drinkers.png"          
         },
         {
           "title": "Flesh Tearers",
-          "link": "pages/gallery/lost/2.html"
+          "link": "LINK",
+          "icon": "https://i.ibb.co/FLP8KGcN/Flesh-Tearers.png"          
         },
         {
           "title": "Angels Encarmine",
-          "link": "pages/gallery/lost/2.html"
+          "link": "LINK",
+          "icon": "https://i.ibb.co/KjXDTJch/Angels-Encarmine.png"          
         },
         {
           "title": "Atlantian Spears",
-          "link": "pages/gallery/lost/2.html"
+          "link": "LINK",
+          "icon": "https://i.ibb.co/NnYk1ksL/Atlantian-Spears.png"          
         },
         {
           "title": "Flesh Eaters",
-          "link": "pages/gallery/lost/2.html"
-        }                                
+          "link": "LINK",
+          "icon": "https://i.ibb.co/4whSTYPQ/Flesh-Eaters.png"          
+        }                              
       ]
     },
     {
@@ -119,20 +135,24 @@
       "children": [
         {
           "title": "Sons of Medusa",
-          "link": "pages/gallery/lost/11.html"
+          "link": "LINK",
+          "icon": "https://i.ibb.co/mF5SyTch/Sons-of-Medusa.png"          
         },
         {
           "title": "Iron Fists",
-          "link": "pages/gallery/lost/2.html"
+          "link": "LINK",
+          "icon": "https://i.ibb.co/cSgmpy5S/Iron-Fists.png"          
         },
         {
           "title": "Brazen Claws",
-          "link": "pages/gallery/lost/2.html"
+          "link": "LINK",
+          "icon": "https://i.ibb.co/Xk4YLh15/Brazen-Claws.png"          
         },
         {
           "title": "Knights of Byzantium",
-          "link": "pages/gallery/lost/2.html"
-        }                
+          "link": "LINK",
+          "icon": "https://i.ibb.co/HDwdRhbS/Knights-of-Byzantium.png"          
+        }               
       ]
     },                
     {
@@ -142,81 +162,99 @@
           "children": [
           {
             "title": "Silver Skulls",
-            "link": "pages/gallery/OG-Chapters/UM.html",
-            "bold": true
+            "link": "LINK",
+            "icon": "https://i.ibb.co/ymZGqpGn/Silver-Skulls.png"
           },
           {
             "title": "Silver Templars",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/8LBJxwf2/Silver-Templars.png"
           },
           {
             "title": "Mentors",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/gbxWTxhb/Mentors.png"
           },
           {
             "title": "Scythes of the Emperor",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/GBQXJRX/Scythes-of-the-Emperor.png"
           },
           {
             "title": "Howling Griffons",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/YBjqVVPR/Howling-Griffons.png"
           },
           {
             "title": "Nemesis",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/B5sMzpHB/Nemesis.png"
           },
           {
             "title": "Hawk Lords",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/LdF71BWN/Hawk-Lords.png"
           },
           {
             "title": "Iron Snakes",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/B2m3w4Rs/Iron-Snakes.png"
           },
           {
             "title": "Doom Legion",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/PsM2kVQX/Doom-Legion.png"
           },
           {
             "title": "Void Tridents",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/LhpsBcv7/Void-Tridents.png"
           },
           {
             "title": "Castellans of the Rift",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/0yM78L6R/Castellans-of-the-Rift.png"
           },
           {
             "title": "Praetors of Orpheus",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/PZw6BpwN/Praetors-of-Orpheus.png"
           },
           {
             "title": "Fire Hawks",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/Z6rYD8DY/Fire-Hawks.png"
           },
           {
             "title": "Obsidian Jaguars",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/DPZsGsRM/Obsidian-Jaguars.png"
           },
           {
             "title": "Mortifactors",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/Wpcw6SyT/Mortifactors.png"
           },
           {
             "title": "Sons of Guilliman",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/4ZhTYHwj/Sons-of-Guilliman.png"
           },
           {
             "title": "Patriarchs of Ulixis",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/wFmCk0Xp/Patriarchs-of-Ulixis.png"
           },
           {
             "title": "Imperius Reavers",
-            "link": "pages/gallery/OG-CHapters/DA.html"
+            "link": "LINK",
+            "icon": "https://i.ibb.co/vxPNKcJw/Imperius-Reavers.png"
           },
           {
             "title": "Doom Eagles",
-            "link": "pages/gallery/OG-CHapters/DA.html"
-          }                                                                                                           
+            "link": "LINK",
+            "icon": "https://i.ibb.co/k6knyxsD/Doom-Eagles.png"
+          }                                                                                                          
         ]
       },
       {
@@ -227,8 +265,9 @@
       "children": [
         {
           "title": "Covenant of Fire",
-          "link": "pages/gallery/lost/11.html"
-        }               
+            "link": "LINK",
+            "icon": "https://i.ibb.co/svpkGGFp/Covenant-of-Fire.png"
+          }              
       ]
     },
     {
@@ -239,20 +278,24 @@
       "children": [
         {
           "title": "Raptors",
-          "link": "pages/gallery/lost/11.html"
-        },
+            "link": "LINK",
+            "icon": "https://i.ibb.co/Z632qx0F/Raptors.png"
+          },
         {
           "title": "Iron Ravens",
-          "link": "pages/gallery/lost/2.html"
-        },
+            "link": "LINK",
+            "icon": "https://i.ibb.co/wNj3ZFH3/Iron-Ravens.png"
+          },
         {
           "title": "Raven's Watch",
-          "link": "pages/gallery/lost/2.html"
-        },
+            "link": "LINK",
+            "icon": "https://i.ibb.co/20q58P91/Ravens-Watch.png"
+          },
         {
           "title": "Death Spectres",
-          "link": "pages/gallery/lost/2.html"
-        }                
+            "link": "LINK",
+            "icon": "https://i.ibb.co/8ydqjPk/Death-Spectres.png"
+          }             
       ]
     },
       {
@@ -285,12 +328,14 @@
     "children": [
       {
         "title": "World Eaters",
-        "link": "pages/tactics/ambush.html"
-      },
+            "link": "LINK",
+            "icon": "https://i.ibb.co/ym9bzfqj/World-Eaters-Loyalists.png"
+          },
       {
         "title": "The Risen",
-        "link": "pages/tactics/heavy-weapons.html"
-      }
+            "link": "LINK",
+            "icon": "https://i.ibb.co/d0mhWj7t/The-Risen-Loyalists.png"
+          }
     ]
   },
   {
@@ -298,15 +343,18 @@
     "children": [
       {
         "title": "Minotaurs",
-        "link": "pages/tactics/ambush.html"
+            "link": "pages/gallery/Unknown/MT.html",
+            "icon": "https://i.ibb.co/kgW4WFx5/Minotaurs.png"
       },
       {
         "title": "Red Scorpions",
-        "link": "pages/tactics/heavy-weapons.html"
+            "link": "pages/gallery/Unknown/RS.html",
+            "icon": "https://i.ibb.co/Cpbjrgjw/Red-Scorpions.png"
       },
       {
         "title": "Carcharodons",
-        "link": "pages/tactics/heavy-weapons.html"
+            "link": "pages/gallery/Unknown/CR.html",
+            "icon": "https://i.ibb.co/N0xvH8Q/Carcharodons.png"
       },
       {
         "title": "Blood Ravens",
@@ -315,40 +363,49 @@
       },
       {
         "title": "Marines Malevolent",
-        "link": "pages/tactics/heavy-weapons.html"
+            "link": "pages/gallery/Unknown/MM.html",
+            "icon": "https://i.ibb.co/s9VD66wr/Marines-Malevolent.png"
       },
       {
         "title": "Soul Drinkers",
-        "link": "pages/tactics/heavy-weapons.html"
+            "link": "pages/gallery/Unknown/SD.html",
+            "icon": "https://i.ibb.co/99fHxrjb/Soul-Drinkers.png"
       },
       {
         "title": "White Templars",
-        "link": "pages/tactics/heavy-weapons.html"
+            "link": "pages/gallery/Unknown/WT.html",
+            "icon": "https://i.ibb.co/xqLMvdnf/White-Templars.png"
       },
       {
         "title": "Metamarines",
-        "link": "pages/tactics/heavy-weapons.html"
+            "link": "pages/gallery/Unknown/MTM.html",
+            "icon": "https://i.ibb.co/hJbwQhwv/Metamarines.png"
       },
       {
         "title": "Marines Exemplar",
-        "link": "pages/tactics/heavy-weapons.html"
+            "link": "pages/gallery/Unknown/MEX.html",
+            "icon": "https://i.ibb.co/Gv7jd9rL/Marines-Exemplar.png"
       },
       {
         "title": "Omega Marines",
-        "link": "pages/tactics/heavy-weapons.html"
+            "link": "pages/gallery/Unknown/OM.html",
+            "icon": "https://i.ibb.co/twskzbYg/Omega-Marines.png"
       },
       {
         "title": "Emperor's Shadows",
-        "link": "pages/tactics/heavy-weapons.html"
+            "link": "pages/gallery/Unknown/ES.html",
+            "icon": "https://i.ibb.co/27TpSnQg/Emperor-s-Shadows.png"
       },
       {
         "title": "Celebrants",
-        "link": "pages/tactics/heavy-weapons.html"
+            "link": "pages/gallery/Unknown/CLS.html",
+            "icon": "https://i.ibb.co/LXDF6ffF/Celebrants-UF.png"
       },
       {
         "title": "Emperor's Hawks",
-        "link": "pages/tactics/heavy-weapons.html"
-      }                                                                     
+            "link": "pages/gallery/Unknown/EHS.html",
+            "icon": "https://i.ibb.co/mVH3fTQT/Emperor-s-Hawks.png"
+      }                                                                    
     ]
   },
     {
@@ -375,7 +432,7 @@
     "bold": true
   }, 
   {
-    "title": "Contact",
+    "title": "Credits",
     "link": "pages/contact.html"
   }
 ]
