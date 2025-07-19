@@ -455,6 +455,7 @@
   }, 
   {
     "title": "Credits",
-    "link": "pages/info/credits.html"
+    "link": "pages/info/credits.html",
+    "bold": true
   }
 ]
