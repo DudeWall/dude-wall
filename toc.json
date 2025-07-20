@@ -37,11 +37,17 @@
         }
       ]
     },
-        {
+    {
       "title": "Space Wolves",
-      "link": "pages/gallery/OG-Chapters/SW.html",
-      "icon": "https://i.ibb.co/r1M4mRd/Spacewolvesymbol.png",
-      "bold": true            
+      "link": "pages/gallery/OG-Chapters/WS.html",
+      "icon": "https://i.ibb.co/r1M4mRd/Spacewolvesymbol.png", 
+      "children": [
+        {
+          "title": "Wolfspear",
+          "link": "pages/gallery/Successors/SW/WFS.html",
+          "icon": "https://i.ibb.co/rKcpYn6x/Wolfspear.png"
+        }
+      ]
     },
     {
       "title": "Imperial Fists",
@@ -129,7 +135,12 @@
           "title": "Flesh Eaters",
           "link": "pages/gallery/Successors/BA/FE.html",
           "icon": "https://i.ibb.co/4whSTYPQ/Flesh-Eaters.png"          
-        }                              
+        },
+        {
+          "title": "Angels Sanguine",
+          "link": "pages/gallery/Successors/BA/ASG.html",
+          "icon": "https://i.ibb.co/d4r4JcF7/Angels-Sanguine.png"          
+        }                                
       ]
     },
     {
