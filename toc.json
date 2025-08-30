@@ -6,7 +6,7 @@
   },
   {
     "title": "First Founding Chapters",
-    "icon": "icons/adeptus-astartes-w.png",
+    "icon": "https://i.ibb.co/zH8b2kQg/adeptus-astartes-W.png",
     "children": [
     {
       "title": "Dark Angels",
@@ -324,7 +324,7 @@
   },
   {
     "title": "Inquisition & Holy Terra",
-    "icon": "icons/Inquisition.png",
+    "icon": "https://i.ibb.co/B2jvZNdZ/Inquisition.png",
     "children": [
       {
         "title": "Deathwatch",
@@ -463,7 +463,7 @@
   {
     "title": "Chaos Khorner",
     "link": "pages/gallery/Other-Chaos/Khorner.html",
-    "icon": "icons/Chaos-w.png",
+    "icon": "]https://i.ibb.co/fYXKZmTY/Chaos-w.png",
     "bold": true
   }, 
   {
