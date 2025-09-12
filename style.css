@@ -54,7 +54,7 @@ body {
   margin: 0; /* Removed default margin */
   font-weight: bold;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  font-style: italic
+  font-style: italic;
 }
 
 /* Layout Wrapper */
@@ -68,7 +68,7 @@ body > .layout-wrapper {
 .sidebar-left {
   width: 300px;
   background-color: #101010;
-  padding: 0,5rem;
+  padding: 0.5rem; /* Fixed syntax: 0,5rem to 0.5rem */
   border-right: 1px solid #2e2e2e;
   display: flex;
   flex-direction: column;
@@ -83,7 +83,7 @@ body > .layout-wrapper {
   padding: 0.25rem 1rem;
   border-radius: 4px;
   font-weight: bold;
-  margin-bottom: 0,3rem;
+  margin-bottom: 0.3rem; /* Fixed syntax: 0,3rem to 0.3rem */
   transition: background-color 0.2s ease;
 }
 
@@ -97,6 +97,8 @@ body > .layout-wrapper {
     border-right: none;
     border-bottom: 1px solid #2e2e2e;
     height: auto;
+    min-height: 0; /* Ensure it doesn’t collapse */
+    flex: 0 0 auto; /* Allow it to shrink but not grow beyond content */
   }
 
   .site-logo {
@@ -113,8 +115,19 @@ body > .layout-wrapper {
     text-align: center;
   }
 
-  body > .layout-wrapper {
+  .layout-wrapper {
     flex-direction: column;
+    height: 100%; /* Ensure full viewport height */
+    min-height: 0; /* Prevent collapse */
+  }
+
+  .main-content {
+    flex: 1; /* Ensure it takes available space */
+    padding: 1rem; /* Reduced padding for mobile */
+    overflow-y: auto; /* Ensure vertical scrolling */
+    min-height: 0; /* Prevent collapse */
+    width: 100%; /* Full width */
+    display: block; /* Ensure visibility */
   }
 }
 
