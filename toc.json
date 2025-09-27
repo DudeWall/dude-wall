@@ -22,11 +22,6 @@
           "title": "Angels of Absolution",
           "link": "pages/gallery/Successors/DA/AOA.html",
           "icon": "https://i.ibb.co/BKdL5Jmr/Angels-of-Absolution.png"          
-        },
-                {
-          "title": "Angels of Vengeance",
-          "link": "pages/gallery/Successors/DA/AOV.html",
-          "icon": "https://i.ibb.co/7NQWVd9J/Angels-of-Vengeance.png"          
         }
       ]
     },
@@ -145,6 +140,11 @@
           "title": "Angels Sanguine",
           "link": "pages/gallery/Successors/BA/ASG.html",
           "icon": "https://i.ibb.co/d4r4JcF7/Angels-Sanguine.png"          
+        },
+        {
+          "title": "Angels of Vengeance",
+          "link": "pages/gallery/Successors/BA/AOV.html",
+          "icon": "https://i.ibb.co/7NQWVd9J/Angels-of-Vengeance.png"          
         }                                
       ]
     },
