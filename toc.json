@@ -22,6 +22,11 @@
           "title": "Angels of Absolution",
           "link": "pages/gallery/Successors/DA/AOA.html",
           "icon": "https://i.ibb.co/BKdL5Jmr/Angels-of-Absolution.png"          
+        },
+                {
+          "title": "Angels of Vengeance",
+          "link": "pages/gallery/Successors/DA/AOV.html",
+          "icon": "https://i.ibb.co/7NQWVd9J/Angels-of-Vengeance.png"          
         }
       ]
     },
@@ -168,6 +173,11 @@
           "title": "Knights of Byzantium",
           "link": "pages/gallery/Successors/IH/KOB.html",
           "icon": "https://i.ibb.co/HDwdRhbS/Knights-of-Byzantium.png"          
+        },
+                {
+          "title": "Steel Confessors",
+          "link": "pages/gallery/Successors/IH/STC.html",
+          "icon": "https://i.ibb.co/HT6VZQr6/Steel-Confessors.png"          
         }               
       ]
     },                
