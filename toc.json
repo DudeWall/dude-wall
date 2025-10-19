@@ -432,7 +432,17 @@
         "title": "Emperor's Hawks",
             "link": "pages/gallery/Unknown/EHS.html",
             "icon": "https://i.ibb.co/mVH3fTQT/Emperor-s-Hawks.png"
-      }                                                                    
+      },
+      {
+        "title": "Liberators",
+            "link": "pages/gallery/Unknown/LIB.html",
+            "icon": "https://i.ibb.co/wF7MYP0W/Liberators.png"
+      },
+      {
+        "title": "Vorpal Swords",
+            "link": "pages/gallery/Unknown/VRS.html",
+            "icon": "https://i.ibb.co/35bfnnYs/Vorpal-Swords.png"
+      }                                                                        
     ]
   },
     {
