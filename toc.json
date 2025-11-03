@@ -362,6 +362,11 @@
         "title": "The Risen",
             "link": "pages/gallery/Loyalists/Risen.html",
             "icon": "https://i.ibb.co/d0mhWj7t/The-Risen-Loyalists.png"
+          },
+      {
+        "title": "Invictors",
+            "link": "pages/gallery/Loyalists/Invictors.html",
+            "icon": "https://i.ibb.co/MjnKSJJ/Invictors.png"
           }
     ]
   },
@@ -442,7 +447,12 @@
         "title": "Vorpal Swords",
             "link": "pages/gallery/Unknown/VRS.html",
             "icon": "https://i.ibb.co/35bfnnYs/Vorpal-Swords.png"
-      }                                                                        
+      },
+      {
+        "title": "Auric Patricians",
+            "link": "pages/gallery/Unknown/APS.html",
+            "icon": "https://i.ibb.co/QLgJhzV/Auric-Patricians.png"
+      }                                                                         
     ]
   },
     {
