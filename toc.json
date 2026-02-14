@@ -103,6 +103,11 @@
           "title": "Sons of Dorn",
           "link": "pages/gallery/Successors/IF/SOD.html",
           "icon": "https://i.ibb.co/1JR9fKN6/Sons-of-Dorn.png"          
+        },
+                {
+          "title": "Exorcists",
+          "link": "pages/gallery/Successors/IF/EXR.html",
+          "icon": "https://i.ibb.co/bRXGRPBX/Exorcists.png"          
         }                                             
       ]
     },
@@ -452,7 +457,12 @@
         "title": "Auric Patricians",
             "link": "pages/gallery/Unknown/APS.html",
             "icon": "https://i.ibb.co/QLgJhzV/Auric-Patricians.png"
-      }                                                                         
+      },
+            {
+        "title": "Storm Wardens",
+            "link": "pages/gallery/Unknown/SWS.html",
+            "icon": "https://i.ibb.co/d0VRXScF/Storm-Wardens.png"
+      }                                                                            
     ]
   },
     {
