@@ -467,7 +467,17 @@
         "title": "Blood Dragons",
             "link": "pages/gallery/Unknown/BDR.html",
             "icon": "https://i.ibb.co/G3tqKMv6/Blood-Dragons.png"
-      }                                                                            
+      },
+                  {
+        "title": "Legion of the Damned",
+            "link": "pages/gallery/Unknown/LOTD.html",
+            "icon": "https://i.ibb.co/0R4NXqkF/Legion-of-the-Damned.png"
+      },
+                  {
+        "title": "Fire Lords",
+            "link": "pages/gallery/Unknown/FLS.html",
+            "icon": "https://i.ibb.co/hJvzXbLH/Fire-Lords.png"
+      }                                                                              
     ]
   },
     {
