@@ -348,14 +348,17 @@
     "children": [
       {
         "title": "Deathwatch",
+        "icon":"https://i.ibb.co/JR8LpkkQ/Deathwatchsymbol2.png",
         "link": "pages/gallery/Other/DW.html"
       },
       {
         "title": "Grey Knights",
+        "icon":"https://i.ibb.co/tMRZkFDd/Grey-Knights-1.png",
         "link": "pages/gallery/Other/GK.html"
       },
       {
         "title": "Adeptus Custodes",
+        "icon":"https://i.ibb.co/xtrg1V6m/Custodes1.png",
         "link": "pages/gallery/Other/AC.html"
       }      
     ]
